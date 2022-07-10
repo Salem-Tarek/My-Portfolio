@@ -1,0 +1,369 @@
+/*
+    Colors:-
+        Green Color => #009e66
+*/
+
+/******************** Global ********************/
+a,a:hover {
+    text-decoration: none;
+    color:#FFF
+}
+
+h3, .h3 {
+    font-size: 1.5rem;
+}
+
+h1, .h1 {
+    font-size: 2rem;
+}
+
+
+body {
+    background-color: #212121;
+    position: relative;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/******************** Start NavBar ********************/
+
+nav.navbar {
+    padding:0;
+    text-align: center;
+    margin-bottom:15px
+}
+
+nav.navbar .navbar-brand{
+    margin-left: 1rem
+}
+
+nav.navbar .navbar-brand h4 {
+    color:#009e66   
+}
+
+.navbar-light .navbar-toggler {
+    margin:10px;
+    border: 1px solid #FFF;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-light .navbar-toggler span.fa {
+    font-size: 1.75rem;
+}
+
+.navbar-collapse {
+    /* margin-top: 10px; */
+}
+
+.navbar-nav .nav-item {
+    font-weight: bold;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding-bottom: 4px;
+    position:relative;
+    display: inline-block;
+    color:#FFF !important;
+    transition:0.4s;
+    border-bottom:2px solid transparent;
+  }
+  
+  .navbar-nav .nav-item .nav-link:before {
+    position: absolute;
+    left: 50%;
+    content: '';
+    height: 2px;
+    background: #009e66;
+    transition: all 0.2s linear;
+    width: 0;
+    bottom: 0;  
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover:before , 
+  .navbar-nav .dropdown:hover .nav-link:before , 
+  .navbar-nav .nav-item.active .nav-link:before{
+    width: 100%;
+    margin-left: -50%;
+  }
+
+
+@media(min-width:767px){
+    ul.navbar-nav li {
+        margin:0 20px
+    }
+}
+
+@media (max-width:767px){
+    .navbar-light .navbar-toggler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:none;
+        color:#009e66
+    }
+
+    ul.navbar-nav li {
+        margin:5px
+    }
+}
+
+/******************** End NavBar ********************/
+
+/******************** Start Info ********************/
+
+.img_text {
+    padding: 20px;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_text_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px
+}
+
+.img_text_wrapper img {
+    max-width: 350px;
+}
+
+.img_text_wrapper .text{
+    width:355px
+}
+
+.img_text_wrapper .text h3 {
+    margin-bottom: 20px;
+}
+
+.img_text h3, .img_text h1 {
+    color:#FFF !important
+}
+
+.img_text h3 span, .img_text h1 span {
+    color:#009e66
+}
+
+/******************** End Info ********************/
+
+/******************** Start Icons Section ********************/
+
+.social-icons {
+    position:absolute;
+    top:50%;
+    right:30px;
+    transform: translateY(-50%);
+}
+
+.social-icons li {
+    margin:30px 0
+}
+
+.social-icons li a {
+    color:#FFF
+}
+
+.social-icons li i {
+    transition: 0.5s;
+} 
+
+.social-icons li:hover i {
+    transform: scale(1.5,1.5);
+}
+
+.social-icons li:first-of-type:hover i {color:#3b5998}
+
+.social-icons li:nth-of-type(2):hover i {color:#e1306c}
+
+.social-icons li:nth-of-type(3):hover i {color:#25d366}
+
+.social-icons li:nth-of-type(4):hover i {color:#0077b5}
+
+.social-icons li:last-of-type:hover i {color:#f5f5f5}
+
+
+@media(max-width:767px){
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        position: static;
+        top:auto;
+        right:auto;
+        margin-top:12px;
+        margin-bottom:0
+    }
+
+    .social-icons li {
+        margin:0 10px
+    }
+}
+
+@media (min-width:992px){
+    .img_text_wrapper {
+        flex-direction: row-reverse;
+    }
+
+    .img_text_wrapper img {
+        max-width: 450px;
+    }
+}
+
+/******************** End Icons Section ********************/
+
+/* Start About Me Page */
+.about h6 {
+    color:#8d8d8d
+}
+.about h1 {
+    color:#009e66
+}
+
+.about p {
+    font-weight: bold;
+    color: #d1cbcb;
+    font-size: 1rem;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    gap:15px
+}
+
+.about-content h2 {
+    color:#009e66
+}
+  
+.about-content .text {
+    padding:15px 0
+}
+
+.about-content .text .mySkills h6 {
+    border-bottom: 2px solid #009e66;
+    width:fit-content;
+    padding-bottom:3px;
+    color: #09d98f;
+}
+
+.about-content .text .mySkills .mySkills-wrapper {
+    gap: 30px
+}
+
+.about-content .text .btn {
+    background-color: #009e66;
+    border-color: #009e66;
+    color: #FFF;
+}
+
+@media (max-width: 992px) {
+    .about-content , .profile-content{
+      grid-template-columns: 1fr;
+    }
+}
+
+
+/* End About Me Page */
+
+/* Start Skills Section */
+
+.skills {
+    padding:15px 0;
+}
+
+.skills h3 {
+    color:#009e66
+}
+  
+.skills-wrapper {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+  
+.skills-wrapper i {
+    font-size:100px;
+    margin:20px
+}
+
+.skills .skills-wrapper .devicon-github-original-wordmark.colored {
+    color: #d3cdcd;
+}
+
+/* Start Portfolio */
+main.projects h1{
+    color: #009e66;
+}
+.projects_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    gap:20px;
+    padding: 20px 0;
+}
+
+@media(max-width: 400px){
+    .projects_wrapper {
+        grid-template-columns: repeat(auto-fit,minmax(260px, 1fr));
+    }
+}
+
+.projects_wrapper .project_img {
+    position: relative;
+}
+
+.projects_wrapper .project_img .layout {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.5s;
+    opacity: 0;
+}
+
+.projects_wrapper .project_img img {
+    height:285px;
+    width:100%;
+}
+
+.projects_wrapper .project_img:hover .layout {
+    opacity: 1;
+}
+
+.projects_wrapper .project_img .layout h2 {
+    margin-bottom: 0;
+    text-decoration: none;
+    color:#009e66
+}
+
+.projects_wrapper .project-techs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:10px;
+    margin-top:10px
+}
+
+.projects_wrapper .project-techs span {
+    background-color: #FFF;
+    color:#212121;
+    border-radius: 5px;
+    padding:3px 8px;
+    font-weight: bold;
+    user-select: none;
+}
+
+/* End Portfolio */
