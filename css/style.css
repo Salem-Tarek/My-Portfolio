@@ -300,12 +300,31 @@ nav.navbar .navbar-brand h4 {
 main.projects h1{
     color: #009e66;
 }
-.projects_wrapper {
+
+.filterBtn-wrapper {
+    gap: 20px;
+}
+
+.filterBtn-wrapper .filterBtn {
+    color: #009e66;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.filterBtn-wrapper .filterBtn.active {
+    text-decoration: underline;
+}
+
+.filterBtn-wrapper .filterBtn:not(.active):hover {
+    color: rgba(0, 158, 103, 0.8);
+}
+
+/* .projects_wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
     gap:20px;
     padding: 20px 0;
-}
+} */
 
 @media(max-width: 400px){
     .projects_wrapper {

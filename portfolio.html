@@ -41,114 +41,135 @@
 
     <main class="projects">
       <div class="container">
-        <h1 class="text-center">My Projects</h1>
-        <ul class="projects_wrapper list-unstyled wow bounceIn">
-          <li class="project">
-            <div class="project_img">
-              <a href="https://salem-tarek.github.io/Misto/" target="_blank">
-                <div class="layout">
-                  <h2>Misto</h2>
+        <h1 class="text-center mb-4">My Projects</h1>
+        <div class="d-flex align-items-center justify-content-center filterBtn-wrapper mb-4">
+          <span class="filterBtn active">All</span>
+          <span class="filterBtn" data-filter="byMe">By Me</span>
+          <span class="filterBtn" data-filter="participated">Participated</span>
+        </div>
+        <div class="projects_wrapper wow bounceIn">
+          <div class="row">
+            <div class="Khamato project-wrapper col-md-6 mb-3" data-category="participated">
+              <div class="project">
+                <div class="project_img">
+                  <a href="https://khamato.com/" target="_blank">
+                    <div class="layout">
+                      <h2>Khamato</h2>
+                    </div>
+                  </a>
+                  <img src="projects/khamato.png" class="img-thumbnail" alt="Khamato">
                 </div>
-              </a>
-              <img src="projects/misto.png" class="img-thumbnail" alt="Misto E-Commerce">
-            </div>
-            <div class="project-techs">
-              <span>VueJS</span>
-              <span>Vuex</span>
-              <span>Vue-Router</span>
-              <span>Vuetify</span>
-              <span>Axios</span>
-              <span>Api</span>
-              <span>SASS</span>
-            </div>
-          </li>
-          <li class="project">
-            <div class="project_img">
-              <a href="https://elblogs.netlify.app/" target="_blank">
-                <div class="layout">
-                  <h2>ElBlogs</h2>
+                <div class="project-techs">
+                  <span>HTML</span>
+                  <span>SASS</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                  <span>jquery</span>
+                  <span>VueJS</span>
+                  <span>Axios</span>
                 </div>
-              </a>
-              <img src="projects/ElBlog.png" class="img-thumbnail" alt="ElBlogs">
+              </div>
             </div>
-            <div class="project-techs">
-              <span>VueJS</span>
-              <span>Vuex</span>
-              <span>Vue-Router</span>
-              <span>Axios</span>
-              <span>Api</span>
-              <span>SASS</span>
-            </div>
-          </li>
-          <li class="project">
-            <div class="project_img">
-              <a href="https://topone-stock.com/" target="_blank">
-                <div class="layout">
-                  <h2>TopOne</h2>
+            <div class="Misto project-wrapper col-md-6 mb-3" data-category="byMe">
+              <div class="project">
+                <div class="project_img">
+                  <a href="https://salem-tarek.github.io/Misto/" target="_blank">
+                    <div class="layout">
+                      <h2>Misto</h2>
+                    </div>
+                  </a>
+                  <img src="projects/misto.png" class="img-thumbnail" alt="Misto E-Commerce">
                 </div>
-              </a>
-              <img src="projects/topone.png" class="img-thumbnail" alt="TopOne">
-            </div>
-            <div class="project-techs">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Bootstrap</span>
-              <span>JavaScript</span>
-              <span>jquery</span>
-            </div>
-          </li>
-          <!-- <li class="project">
-            <div class="project_img">
-              <a href="https://zakeronline.netlify.app/" target="_blank">
-                <div class="layout">
-                  <h2>Zaker Online</h2>
+                <div class="project-techs">
+                  <span>VueJS</span>
+                  <span>Vuex</span>
+                  <span>Vue-Router</span>
+                  <span>Vuetify</span>
+                  <span>Axios</span>
+                  <span>Api</span>
+                  <span>SASS</span>
                 </div>
-              </a>
-              <img src="projects/ZakerOnline.png" class="img-thumbnail" alt="ZakerOnline">
+              </div>
             </div>
-            <div class="project-techs">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Bootstrap</span>
-              <span>JavaScript</span>
-              <span>jquery</span>
-            </div>
-          </li> -->
-          <li class="project">
-            <div class="project_img">
-              <a href="https://bio-fresh-export.netlify.app/" target="_blank">
-                <div class="layout">
-                  <h2>BioFreshExport</h2>
+            <div class="Elblog project-wrapper col-md-6 mb-3" data-category="byMe">
+              <div class="project">
+                <div class="project_img">
+                  <a href="https://elblogs.netlify.app/" target="_blank">
+                    <div class="layout">
+                      <h2>ElBlogs</h2>
+                    </div>
+                  </a>
+                  <img src="projects/ElBlog.png" class="img-thumbnail" alt="ElBlogs">
                 </div>
-              </a>
-              <img src="projects/biofreshexport.png" class="img-thumbnail" alt="BioFreshExport">
-            </div>
-            <div class="project-techs">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Bootstrap</span>
-              <span>JavaScript</span>
-              <span>jquery</span>
-            </div>
-          </li>
-          <li class="project">
-            <div class="project_img">
-              <a href="https://salem-tarek.netlify.app/" target="_blank">
-                <div class="layout">
-                  <h2>Portfolio</h2>
+                <div class="project-techs">
+                  <span>VueJS</span>
+                  <span>Vuex</span>
+                  <span>Vue-Router</span>
+                  <span>Axios</span>
+                  <span>Api</span>
+                  <span>SASS</span>
                 </div>
-              </a>
-              <img src="projects/portfolio.png" class="img-thumbnail" alt="Portfolio">
+              </div>
             </div>
-            <div class="project-techs">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Bootstrap</span>
-              <span>JavaScript</span>
-              <span>jquery</span>
-            </div>
-          </li>
-        </ul>
+            <!-- <div class="project-wrapper col-md-6 mb-3">
+              <div class="project">
+                <div class="project_img">
+                  <a href="https://topone-stock.com/" target="_blank">
+                    <div class="layout">
+                      <h2>TopOne</h2>
+                    </div>
+                  </a>
+                  <img src="projects/topone.png" class="img-thumbnail" alt="TopOne">
+                </div>
+                <div class="project-techs">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                  <span>jquery</span>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="project-wrapper col-md-6 mb-3">
+              <div class="project">
+                <div class="project_img">
+                  <a href="https://bio-fresh-export.netlify.app/" target="_blank">
+                    <div class="layout">
+                      <h2>BioFreshExport</h2>
+                    </div>
+                  </a>
+                  <img src="projects/biofreshexport.png" class="img-thumbnail" alt="BioFreshExport">
+                </div>
+                <div class="project-techs">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                  <span>jquery</span>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="project-wrapper col-md-6 mb-3">
+              <div class="project">
+                <div class="project_img">
+                  <a href="https://salem-tarek.netlify.app/" target="_blank">
+                    <div class="layout">
+                      <h2>Portfolio</h2>
+                    </div>
+                  </a>
+                  <img src="projects/portfolio.png" class="img-thumbnail" alt="Portfolio">
+                </div>
+                <div class="project-techs">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                  <span>jquery</span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
       </div>
     </main>
 
@@ -158,5 +179,18 @@
     <script src="js/popper.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>new WOW().init()</script>
+    <script>
+      $('.filterBtn').on('click', function(){
+        $('.filterBtn').removeClass('active');
+        $(this).addClass('active'); 
+        let filter  = $(this).data('filter');
+        if(filter){
+          $('.project-wrapper').fadeOut(300);
+          $(`[data-category=${filter}]`).fadeIn(300);
+        }else{
+          $('.project-wrapper').fadeIn(300);
+        }
+      })
+    </script>
   </body>
 </html>
